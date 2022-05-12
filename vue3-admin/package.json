@@ -1,0 +1,70 @@
+{
+  "name": "vue3-admin",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "@commitlint/cli": "^16.1.0",
+    "@commitlint/config-conventional": "^16.0.0",
+    "axios": "^0.25.0",
+    "axios-retry": "^3.2.4",
+    "cacheables": "^1.2.2",
+    "core-js": "^3.6.5",
+    "element-plus": "^1.3.0-beta.5",
+    "husky": "^7.0.4",
+    "lodash": "^4.17.21",
+    "pinia": "^2.0.9",
+    "pinia-plugin-persist": "0.0.92",
+    "qs": "^6.10.3",
+    "screenfull": "^5.2.0",
+    "svg-sprite-loader": "^6.0.11",
+    "vue": "^3.0.0",
+    "vue-router": "^4.0.0-0",
+    "vuex": "^4.0.2",
+    "vuex-persistedstate": "^4.1.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "babel-eslint": "^10.1.0",
+    "cz-customizable": "^6.3.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-vue": "^7.0.0",
+    "prettier": "^2.2.1",
+    "sass": "^1.26.5",
+    "sass-loader": "^8.0.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,vue}": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "description": "针对企业后台管理项目搭建的基础框架模型，实现基本的布局、登录权限、多环境区分，如果你没有后端接口，[你可以使用nestjs后端项目](https://github.com/kuangshp/nestjs-mysql-api)",
+  "main": ".cz-config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kuangshp/vue3-admin.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kuangshp/vue3-admin/issues"
+  },
+  "homepage": "https://github.com/kuangshp/vue3-admin#readme"
+}
